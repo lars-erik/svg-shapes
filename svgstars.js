@@ -1,6 +1,9 @@
 ﻿(function() {
 
     var svg = document.getElementById("drawing"),
+        countInput = document.getElementById("count"),
+        angleInput = document.getElementById("angle"),
+        growthInput = document.getElementById("growth"),
         width = window.innerWidth - 250,
         height = window.innerHeight,
         boxHeight = height,
@@ -76,11 +79,18 @@
         }
     }
 
+     function parseInput() {
+         until = eval(countInput.value);
+         angleIncr = eval(angleInput.value);
+         increase = eval(growthInput.value);
+     }
+     
     function draw() {
         document.body.removeChild(svg);
         svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
         svg.id = "drawing";
         document.body.appendChild(svg);
+        parseInput();
         resize();
         drawStars();
     }

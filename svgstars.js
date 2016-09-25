@@ -77,7 +77,11 @@
     }
 
     function draw() {
-        svg.innerHTML = "";
+        document.body.removeChild(svg);
+        svg = document.creatElement("svg");
+        svg.id = "drawing";
+        document.body.appendChild(svg);
+        resize();
         drawStars();
     }
 

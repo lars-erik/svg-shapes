@@ -5,8 +5,15 @@
 <pre id="output"></pre>
 <script type="text/javascript">
 
-var fileInput = document.getElementById("file");
-fileInput.addEventListener("");
+var fileInput = document.getElementById("file"),
+    output = document.getElementById("output");
+fileInput.addEventListener("change", function(evt) {
+  var file = evt.target.files[0];
+  var reader = new FileReader();
+  reader.onload = function(e) {
+    output.innerHTML = e.target.result;
+  }
+}, false);
 
 </script>
 </body>

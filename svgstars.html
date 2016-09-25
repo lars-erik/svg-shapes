@@ -11,13 +11,22 @@
             position: fixed;
             left: 0;
             top: 0;
-            right: 0;
+            right: 100px;
             bottom: 0;
         }
+		#ui {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 100px;
+			background: gray;
+		}
     </style>
 </head>
 <body>
-    <svg id="drawing"></svg>
+	<svg id="drawing"></svg>
+	<div id="ui"></div>
     <script src="svgstars.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 ﻿(function() {
 
     var svg = document.getElementById("drawing"),
-        width = window.innerWidth,
+        width = window.innerWidth - 250,
         height = window.innerHeight,
         boxHeight = height,
         boxWidth = parseInt(width / height * boxHeight),

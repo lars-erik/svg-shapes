@@ -78,7 +78,7 @@
 
     function draw() {
         document.body.removeChild(svg);
-        svg = document.creatElement("svg");
+        svg = document.createElement("svg");
         svg.id = "drawing";
         document.body.appendChild(svg);
         resize();

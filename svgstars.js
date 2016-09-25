@@ -76,7 +76,14 @@
         }
     }
 
+    function draw() {
+        svg.innerHTML = "";
+        drawStars();
+    }
+
     resize();
     drawStars();
 
+     document.getElementById("drawButton").addEventListener("click", draw);
+     
 }());

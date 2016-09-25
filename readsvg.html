@@ -13,6 +13,7 @@ fileInput.addEventListener("change", function(evt) {
   reader.onload = function(e) {
     output.innerHTML = e.target.result;
   }
+  reader.readAsText(file);
 }, false);
 
 </script>

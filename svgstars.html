@@ -14,30 +14,30 @@
             right: 250px;
             bottom: 0;
         }
-		#ui {
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			width: 250px;
-			background: gray;
-		}
+        #ui {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 250px;
+            background: gray;
+        }
     </style>
 </head>
 <body>
-	<svg id="drawing"></svg>
-	<div id="ui">
+    <svg id="drawing"></svg>
+    <div id="ui">
         <div>
         <label>Count</label>
         <input type="number" id="count" value="3"/>
         </div>
         <div>
         <label>Angle</label>
-        <input type="number" id="angle" value="Math.PI/6"/>
+        <input type="text" id="angle" value="Math.PI/6"/>
         </div>
         <div>
         <label>Growth</label>
-        <input type="number" id="growth" value="Math.sqrt(3)"/>
+        <input type="text" id="growth" value="Math.sqrt(3)"/>
         </div>
         <button type="button" id="drawButton">Draw</button>
     </div>
